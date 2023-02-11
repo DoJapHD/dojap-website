@@ -66,7 +66,7 @@ body {
     text-align: center;
     width: max-content;
     overflow-wrap: normal;
-    word-break: break-all;
+    word-break: break-word;
     margin: auto;
 }
 
@@ -95,34 +95,15 @@ body {
     animation: fadeInUp .8s;
 }
 
-.profile p {
+.profile-quote {
     position: relative;
     top: 50%;
     border-right: 2px solid rgba(255, 255, 255, .75);
     white-space: nowrap;
     overflow: hidden;
     color: #94a1b2;
-    font-size: 13px;
+    font-size: 15px;
     animation: typewriter 3s steps(44) 1s 1 normal both, blinkTextCursor 530ms steps(44) infinite normal;
-}
-
-.profile ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    list-style: none
-}
-
-.profile ul li a {
-    color: #a6a8b8;
-    display: flex;
-    text-decoration: none;
-    margin: 20px 5px;
-    font-size: 25px;
-    padding: 5px;
-    transition: 0.2s all;
 }
 
 .profile ul li a:hover {
@@ -293,4 +274,38 @@ i {
 .confetti-div {
     top: 0;
     left: 0;
+}
+
+.socials i, .socials img {
+    font-size: 30px;
+    scale: 1;
+    transition: 0.5s;
+}
+
+.socials i:hover, .socials img:hover {
+    scale: 1.2;
+    transition: 0.3s;
+}
+
+.socials-discord i:hover {
+    color: #5865F2;
+}
+
+.socials-github i:hover {
+    color: #000;
+}
+
+.socials-instagram i:hover {
+    color: #d6249f;
+}
+
+.socials-twitter i:hover {
+    color: #00ACEE;
+}
+
+.socials-steam i:hover {
+    color: #2c7bac;
+}
+
+.socials-laby img:hover {
 }
